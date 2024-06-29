@@ -11,8 +11,8 @@ source:
 build:
   noarch: python
   entry_points:
-    - cartes = cartes.__main__:main
-  number: 0
+    - cartes = cartes.tiles.fastapi:main
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -29,9 +29,7 @@ requirements:
     - pandas >=1.3
     - geopandas >=0.10
     - altair >=4.2
-    - requests >=2.27
     - Shapely >=1.8
-    - aiohttp >=3.8
     - appdirs >=1.4
     - lxml >=4.7
     - tqdm >=4.62
@@ -39,7 +37,10 @@ requirements:
     - pyproj >=3.1
     - jsonschema >=3.0
     - beautifulsoup4 >=4.10
-    - rich >=12.6.0
+    - httpx >=0.27
+    - nest_asyncio >=1.6.0
+    - fastapi >=0.111.0
+    - uvicorn >=0.30.1
 
 test:
   requires:
