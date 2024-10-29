@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: cartes
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cartes/cartes-{{ version }}.tar.gz
-  sha256: fbf750c29201beefb3914a87f34fcbb78da782c810e2b1f6086482018a11de30
+  sha256: a8058308e3f1f203ccd8153040d660863fc70c5efd4efd312359780059255e12
 
 build:
   noarch: python
