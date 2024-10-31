@@ -19,8 +19,7 @@ requirements:
   host:
     - python >=3.8
     - pip
-    - poetry >=1.0.10
-    - poetry-core
+    - hatchling
   run:
     - python >=3.8,<4.0
     - numpy >=1.21
