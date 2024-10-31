@@ -9,7 +9,7 @@ source:
   sha256: 404bf6f314a67fe0b163452e8122b863cc87e4ebc7e811087b40f8ccf4b216d7
 
 build:
-  # noarch: python
+  noarch: python
   entry_points:
     - cartes = cartes.tiles.fastapi:main
   number: 0
@@ -38,17 +38,10 @@ requirements:
     - tqdm >=4.66.5
     - uvicorn >=0.31.0
 
-    - cartopy >=0.23.0  # [py<3.10]
-    - cartopy >=0.24.1  # [py>=3.10]
-
-    - numpy >=2.0.2     # [py<3.10]
-    - numpy >=2.1.2     # [py>=3.10]
-
-    - pyproj <3.7.1     # [py<3.10]
-    - pyproj >=3.7.0    # [py>=3.10]
-
-    - scipy >=1.13.1    # [py<3.10]
-    - scipy >=1.14.1    # [py>=3.10]
+    - cartopy >=0.23.0
+    - numpy >=2.0.2
+    - pyproj >=3.7.0
+    - scipy >=1.13.1
 
 test:
   requires:
