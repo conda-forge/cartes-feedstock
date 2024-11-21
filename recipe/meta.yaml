@@ -1,12 +1,12 @@
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 
 package:
   name: cartes
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/cartes/cartes-{{ version }}.tar.gz
-  sha256: 404bf6f314a67fe0b163452e8122b863cc87e4ebc7e811087b40f8ccf4b216d7
+  url: https://pypi.org/packages/source/c/cartes/cartes-{{ version }}.tar.gz
+  sha256: 3ae35c612a215e85ae1b713330115e849d7826c97d24e0f06fd53767f553557f
 
 build:
   noarch: python
@@ -22,7 +22,6 @@ requirements:
     - hatchling
   run:
     - python >=3.9,<4.0
-
     - altair >=5.4.1
     - appdirs >=1.4.4
     - beautifulsoup4 >=4.12.3
@@ -37,7 +36,6 @@ requirements:
     - shapely >=2.0.6
     - tqdm >=4.66.5
     - uvicorn >=0.31.0
-
     - cartopy >=0.23.0
     - numpy >=2.0.2
     - pyproj >=3.7.0
