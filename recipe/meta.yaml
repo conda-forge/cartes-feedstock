@@ -1,4 +1,4 @@
-{% set version = "0.8.3" %}
+{% set version = "0.8.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/cartes/cartes-{{ version }}.tar.gz
-  sha256: 3ae35c612a215e85ae1b713330115e849d7826c97d24e0f06fd53767f553557f
+  sha256: 5b67e1ffa6c3114a93f7af4a3dc23c334c73ca07b395fe344671c23e00f7ad4c
 
 build:
   noarch: python
